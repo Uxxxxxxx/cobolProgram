@@ -1,0 +1,21 @@
+
+Copiar
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. Soma.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  Num1          PIC 9(5).
+       01  Num2          PIC 9(5).
+       01  Resultado     PIC 9(6).
+
+       PROCEDURE DIVISION.
+           DISPLAY "Digite o primeiro número: ".
+           ACCEPT Num1.
+           DISPLAY "Digite o segundo número: ".
+           ACCEPT Num2.
+
+           ADD Num1 TO Num2 GIVING Resultado.
+           DISPLAY "A soma é: " Resultado.
+
+           STOP RUN.
