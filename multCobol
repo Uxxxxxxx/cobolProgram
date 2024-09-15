@@ -1,0 +1,20 @@
+
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. Multiplicacao.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  Num1          PIC 9(5).
+       01  Num2          PIC 9(5).
+       01  Resultado     PIC 9(10).
+
+       PROCEDURE DIVISION.
+           DISPLAY "Digite o primeiro número: ".
+           ACCEPT Num1.
+           DISPLAY "Digite o segundo número: ".
+           ACCEPT Num2.
+
+           MULTIPLY Num1 BY Num2 GIVING Resultado.
+           DISPLAY "A multiplicação é: " Resultado.
+
+           STOP RUN.
