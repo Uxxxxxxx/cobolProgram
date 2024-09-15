@@ -1,0 +1,47 @@
+     IDENTIFICATION DIVISION.
+       PROGRAM-ID. LoopWithGreeting.
+
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+           DISPLAY-COMPUTERS     IS "SCREEN".
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  Num-Passagens      PIC 9(3) VALUE 0.
+       01  Contador           PIC 9(3) VALUE 1.
+       01  Hora               PIC 9(2).
+       01  Minuto             PIC 9(2).
+       01  Saudacao           PIC X(20).
+
+       PROCEDURE DIVISION.
+       MAIN-PROCEDURE.
+
+           * Obtendo a hora do sistema
+           ACCEPT Hora FROM TIME.
+           ACCEPT Minuto FROM TIME.
+
+           * Determinando a saudação com base na hora
+           IF Hora < 12 THEN
+               MOVE "Bom dia!" TO Saudacao
+           ELSE IF Hora < 18 THEN
+               MOVE "Boa tarde!" TO Saudacao
+           ELSE
+               MOVE "Boa noite!" TO Saudacao
+           END-IF.
+
+           DISPLAY Saudacao.
+
+           DISPLAY "Quantas passagens você deseja realizar? " 
+           ACCEPT Num-Passagens.
+
+           IF Num-Passagens <= 0 THEN
+               DISPLAY "Por favor, insira um número positivo."
+           ELSE
+               PERFORM UNTIL Contador > Num-Passagens
+                   DISPLAY "Agora estamos na passagem de número: " Contador
+                   ADD 1 TO Contador
+               END-PERFORM
+           END-IF.
+
+           STOP RUN.
