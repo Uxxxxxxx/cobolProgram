@@ -1,0 +1,27 @@
+     IDENTIFICATION DIVISION.
+       PROGRAM-ID. Divisao.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  Num1          PIC 9(5).
+       01  Num2          PIC 9(5).
+       01  Resultado     PIC 9(5).
+       01  Resto         PIC 9(5).
+
+       PROCEDURE DIVISION.
+           DISPLAY "Digite o numerador: ".
+           ACCEPT Num1.
+           DISPLAY "Digite o denominador: ".
+           ACCEPT Num2.
+
+           IF Num2 = 0 THEN
+               DISPLAY "Erro: Divisão por zero!"
+           ELSE
+               DIVIDE Num1 BY Num2 GIVING Resultado
+               REMAINDER Resto.
+
+               DISPLAY "A divisão é: " Resultado.
+               DISPLAY "O resto da divisão é: " Resto.
+           END-IF.
+
+           STOP RUN.
