@@ -1,5 +1,5 @@
      IDENTIFICATION DIVISION.
-       PROGRAM-ID. LoopWithGreeting.
+       PROGRAM-ID. LoopCobol.
 
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
@@ -45,3 +45,4 @@
            END-IF.
 
            STOP RUN.
+           END PRFOGRAM. LoopCobol.
