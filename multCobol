@@ -1,6 +1,6 @@
 
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. Multiplicacao.
+       PROGRAM-ID. MultCobol.
 
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -18,3 +18,4 @@
            DISPLAY "A multiplicação é: " Resultado.
 
            STOP RUN.
+           END PROGRAM. MultCobol.
