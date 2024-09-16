@@ -1,6 +1,6 @@
 
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. Subtracao.
+       PROGRAM-ID. subCobol.
 
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -18,3 +18,4 @@
            DISPLAY "A subtração é: " Resultado.
 
            STOP RUN.
+           END PROGRAM. subCobol.
