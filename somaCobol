@@ -1,6 +1,6 @@
 
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. Soma.
+       PROGRAM-ID. somaCobol.
 
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -18,3 +18,4 @@
            DISPLAY "A soma é: " Resultado.
 
            STOP RUN.
+           END PROGRAM. somaCobol
