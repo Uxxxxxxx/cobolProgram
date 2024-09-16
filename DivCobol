@@ -1,5 +1,5 @@
      IDENTIFICATION DIVISION.
-       PROGRAM-ID. Divisao.
+       PROGRAM-ID. DivCobol.
 
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -25,3 +25,4 @@
            END-IF.
 
            STOP RUN.
+          END PROGRAM. DivCobol.
