@@ -17,5 +17,5 @@
            ADD Num1 TO Num2 GIVING Resultado.
            DISPLAY "A soma é: " Resultado.
 
-           STOP RUN.
-           END PROGRAM. somaCobol
+           STOP RUN.somaCobol.
+         
