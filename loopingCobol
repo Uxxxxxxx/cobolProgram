@@ -44,5 +44,5 @@
                END-PERFORM
            END-IF.
 
-           STOP RUN.
-           END PRFOGRAM. LoopCobol.
+           STOP RUN. LoopCobol.
+
