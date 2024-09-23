@@ -17,5 +17,5 @@
            SUBTRACT Num2 FROM Num1 GIVING Resultado.
            DISPLAY "A subtração é: " Resultado.
 
-           STOP RUN.
-           END PROGRAM. subCobol.
+           STOP RUN. subCobol.
+
