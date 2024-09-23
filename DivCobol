@@ -24,5 +24,4 @@
                DISPLAY "O resto da divisão é: " Resto.
            END-IF.
 
-           STOP RUN.
-          END PROGRAM. DivCobol.
+           STOP RUN.DivCobol.
