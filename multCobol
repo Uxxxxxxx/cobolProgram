@@ -17,5 +17,5 @@
            MULTIPLY Num1 BY Num2 GIVING Resultado.
            DISPLAY "A multiplicação é: " Resultado.
 
-           STOP RUN.
-           END PROGRAM. MultCobol.
+           STOP RUN. MultCobol
+         
